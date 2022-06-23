@@ -1,0 +1,42 @@
+.form-body {
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin-top: 25px;
+	/* margin-bottom: 50px; */
+	margin-right: 150px;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+.form-body label {
+	font-weight: 700;
+}
+
+.form-body table {
+	border-collapse: collapse;
+	box-shadow: 0 5px 10px rgb(184, 184, 184);
+	background-color: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+.form-body thead {
+	box-shadow: 0 5px 10px rgb(184, 184, 184);
+}
+
+.form-body th {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 12px;
+	font-weight: 900;
+    text-align: center;
+}
+
+.form-body td {
+	padding: 1rem 2rem;
+    text-align: center;
+}

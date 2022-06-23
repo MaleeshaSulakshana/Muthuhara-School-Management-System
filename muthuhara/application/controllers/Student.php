@@ -118,7 +118,8 @@ class Student extends CI_Controller {
     // Paypal
     function student_pay_fees(){
 
-        $payment = $this->input->post('payment');
+        $form = $this->input->post();
+        $payment = $form['payment'];
 
         //Set variables for paypal form
         $returnURL = base_url().'Student/success/'.$payment; //payment success url

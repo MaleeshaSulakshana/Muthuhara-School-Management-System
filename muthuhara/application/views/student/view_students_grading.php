@@ -1,6 +1,6 @@
         
         <div class="col-md-8">
-            <table class="table table-striped">
+            <table class="table table-striped" style="width:80%;">
                 <thead>
                     <tr>
                     <th scope="col">Month</th>

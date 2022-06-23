@@ -7,8 +7,8 @@ class AuthModel extends CI_Model {
         $this->db->select('*');
         $this->db->from('users');
         $this->db->where('email',$username);
-        // $this->db->where('password',md5($password));
-        $this->db->where('password',$password);
+        $this->db->where('password',md5($password));
+        // $this->db->where('password',$password);
         $query = $this->db->get();
         return $query;
     }

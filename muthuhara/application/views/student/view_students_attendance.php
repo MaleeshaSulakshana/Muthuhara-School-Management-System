@@ -1,21 +1,22 @@
         
         <div class="col-md-8 d-flex">
-
+            <div class="form-body">
             <form action="<?php echo site_url('/Student/view_students_attendance_by_date');?>" method="POST" >
 
                 <div class="form-group">
                     <label for="exampleInputDate">Select View Month</label>
-                    <input type="month" class="form-control" id="view_date" name="view_date">
+                    <input type="month" class="form-control" id="view_date" name="view_date" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary">View Attendance</button>
+                <button type="submit" class="btn btn-success">View Attendance</button>
 
             </form>
-
+            </div>
         </div>
 
         
         <div class="col-md-8">
+            <div class="form-body">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -44,6 +45,7 @@
 
                 </tbody>
             </table>
+            </div>
         </div>
 
     </div>

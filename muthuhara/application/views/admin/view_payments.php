@@ -5,11 +5,11 @@
         </div> -->
         
         <div class="col-md-8">
-            <table class="table table-striped">
+            <table class="table table-striped" style="width:80%;">
                 <thead>
                     <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Date</th>
+                    <th scope="col">Month</th>
                     <th scope="col">Student Id</th>
                     <th scope="col">Payment Amount</th>
                     </tr>

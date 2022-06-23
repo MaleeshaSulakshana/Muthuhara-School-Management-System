@@ -16,7 +16,7 @@ class Auth extends CI_Controller {
 		$this->template->layout_simple('login');
 	}
 
-    function login_validation(){
+    public function login_validation(){
         $this->load->library('form_validation');
         $this->form_validation->set_rules('username','Username','required');
         $this->form_validation->set_rules('password','Password','required');
@@ -28,7 +28,7 @@ class Auth extends CI_Controller {
         }
     }
 
-    function auth(){
+    public function auth(){
         $username = $this->input->post('username',true);
         $password = $this->input->post('password',true);
         $result = $this->AuthModel->check_user($username,$password);
@@ -66,7 +66,7 @@ class Auth extends CI_Controller {
         
     }
 
-    function logout(){
+    public function logout(){
             
         $this->session->unset_userdata('username');
         redirect('Auth/index');

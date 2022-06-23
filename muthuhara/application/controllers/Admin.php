@@ -240,7 +240,7 @@ class Admin extends CI_Controller {
 
             $this->load->model('AuthModel');
             $data['users'] =  $this->AuthModel->get_users_details_by_id($user_id);
-            $this->template->layout_admin('admin/view_admin_details_by_id', $data);
+            $this->template->layout_partials('admin/view_admin_details_by_id', $data);
 
         }else{
             redirect(base_url().'Auth/index');
@@ -285,7 +285,7 @@ class Admin extends CI_Controller {
 
             $this->load->model('AuthModel');
             $data['users'] =  $this->AuthModel->get_users_details_by_id($user_id);
-            $this->template->layout_admin('admin/view_teacher_details_by_id', $data);
+            $this->template->layout_partials('admin/view_teacher_details_by_id', $data);
         
 
         }else{
@@ -302,7 +302,7 @@ class Admin extends CI_Controller {
 
             $this->load->model('AuthModel');
             $data['users'] =  $this->AuthModel->get_users_details_by_id($user_id);
-            $this->template->layout_admin('admin/view_student_details_by_id', $data);
+            $this->template->layout_partials('admin/view_student_details_by_id',$data);
         
 
         }else{

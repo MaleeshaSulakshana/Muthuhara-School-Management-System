@@ -46,6 +46,18 @@
             $this->ci->load->view('templates/admin_footer');
         }
 
+        //partials dashbord
+        function layout_partials($view_name, $data = null) {
+
+            $data['cssfile_name'] = 'assests/css/'.$view_name.'.css';
+            $data['jsfile_name'] = 'assests/js/'.$view_name.'.js';
+
+            $this->ci->load->view('partials/header',$data);
+            $this->ci->load->view('partials/nav');
+            $this->ci->load->view($view_name);
+            $this->ci->load->view('partials/footer');
+        }
+
         //admin dashbord
         function layout_teacher($view_name, $data = null) {
 

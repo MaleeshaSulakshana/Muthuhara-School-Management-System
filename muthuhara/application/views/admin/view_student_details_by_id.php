@@ -1,4 +1,7 @@
+        
+       
         <div class="col-md-8">
+             <div class="form-body">
             <form action="<?php echo site_url('Admin/edit_student_details/'.$users[0]['users_id']);?>" method="POST" >
 
                 <div class="form-group">
@@ -26,10 +29,11 @@
                 </div>
 
                 <!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
-                <button type="submit" class="btn btn-primary">Edit</button>
+                <button type="submit" class="btn btn-info">Edit</button>
                 <!-- <button type="submit" class="btn btn-primary">Password Change</button> -->
 
             </form>
+            </div>
         </div>
 
     </div>

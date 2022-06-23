@@ -158,3 +158,26 @@
     font-size: 30px;
 }
 */
+
+.cart {
+	box-sizing: border-box;
+	background-color: white;
+	position: relative;
+	padding: 100px 50px 0px 0px;
+}
+
+.dash-button p {
+	align-items: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+}
+
+.dash-button img {
+	width: 100px;
+	height: 100px;
+}
+
+.row .icon-dashboard {
+	margin-bottom: 50px;
+}

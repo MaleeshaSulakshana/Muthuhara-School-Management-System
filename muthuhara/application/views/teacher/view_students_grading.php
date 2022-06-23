@@ -1,31 +1,31 @@
         
         <div class="col-md-8 d-flex">
-
+        <div class="form-body">
             <form action="<?php echo site_url('/Teacher/view_students_grading_by_month');?>" method="POST" >
 
                 <div class="form-group">
                     <label for="exampleInputDate">Select View Month</label>
-                    <input type="month" class="form-control" id="view_month" name="view_month">
+                    <input type="month" class="form-control" id="view_month" name="view_month" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary">View Grading</button>
+                <button type="submit" class="btn btn-success">View Grading</button>
 
             </form>
-
+        </div>
         </div>
         
         <div class="col-md-8 d-flex">
-
+            <div class="form-body">
             <form action="<?php echo site_url('/Teacher/insert_grading');?>" method="POST" >
 
                 <div class="form-group">
                     <label for="exampleInputDate">Month</label>
-                    <input type="month" class="form-control" id="month" name="month">
+                    <input type="month" class="form-control" id="month" name="month" required>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputGrade">Grade</label>
-                    <input type="text" class="form-control" id="grade" name="grade">
+                    <input type="text" class="form-control" id="grade" name="grade" required>
                 </div>
 
                 <div class="form-group">
@@ -46,13 +46,14 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Mark Grading</button>
+                <button type="submit" class="btn btn-info">Mark Grading</button>
 
             </form>
-
+            </div>
         </div>
 
         <div class="col-md-8">
+            <div class="form-body">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -81,6 +82,7 @@
 
                 </tbody>
             </table>
+            </div>
         </div>
 
     </div>

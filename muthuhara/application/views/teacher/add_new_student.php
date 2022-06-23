@@ -1,4 +1,9 @@
-        <div class="col-md-8">
+        <div class="col-md-7">
+        <div class="wrapper">
+                <div class="title">
+                    Add New Student
+                </div>
+                <div class="form">
             <form action="<?php echo site_url('/teacher/student_registration_validation');?>" method="POST" >
 
                 <div class="form-group">
@@ -27,11 +32,13 @@
                     <span class="text-danger"><?php echo $this->session->flashdata("error") ?></span>   
                 </div>
 
-                <button type="submit" class="btn btn-primary">Cancel</button>
+                <!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
                 <button type="submit" class="btn btn-primary">Create Student</button>
 
             </form>
         </div>
+    </div>
+    </div>
 
     </div>
 </div>

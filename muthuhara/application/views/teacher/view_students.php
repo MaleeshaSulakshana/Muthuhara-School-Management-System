@@ -1,10 +1,12 @@
+<div class="add_student">
         <div class="col-md-8">
-            <a href="<?php echo base_url().'teacher/add_student' ?>" class="btn btn-primary">
-                                    Add Student
+            <a href="<?php echo base_url().'teacher/add_student' ?>" class="btn btn-info">
+            Add Student
                                 </a>
         </div>
         
         <div class="col-md-8">
+        <div class="content-table">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -12,6 +14,7 @@
                     <th scope="col">Username</th>
                     <th scope="col">Email</th>
                     <th scope="col">Active</th>
+                    <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,11 +25,11 @@
                             <th scope="row"><?php echo $user['username'] ?></th>
                             <th scope="row"><?php echo $user['email'] ?></th>
                             <th scope="row"><?php echo $user['active'] ?></th>
-                            <th scope="row"></th>
-                            <th scope="row"></th>
+                            <!-- <th scope="row"></th>
+                            <th scope="row"></th> -->
 
                             <th scope="row">
-                                <a href="<?php echo base_url().'teacher/view_student_details/'.$user['users_id'] ?>" class="btn btn-primary">
+                                <a href="<?php echo base_url().'teacher/view_student_details/'.$user['users_id'] ?>" class="btn btn-success">
                                     Edit
                                 </a>
                             </th>
@@ -45,7 +48,9 @@
 
                 </tbody>
             </table>
+                    </div>
         </div>
 
     </div>
 </div>
+                    </div>

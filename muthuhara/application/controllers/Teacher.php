@@ -240,7 +240,7 @@ class Teacher extends CI_Controller {
 
             $this->load->model('AuthModel');
             $data['users'] =  $this->AuthModel->get_users_details_by_id($user_id);
-            $this->template->layout_teacher('teacher/view_student_details_by_id', $data);
+            $this->template->layout_partials('teacher/view_student_details_by_id', $data);
         
 
         }else{
